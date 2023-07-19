@@ -384,8 +384,10 @@
             android:onClick="draw_button_click"/>
 
         <ImageView
+            android:id="@+id/drawing_img"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:onClick="drawing_click"/>
 
     </LinearLayout>
 
@@ -394,7 +396,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#F2FBEF"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:visibility="invisible">
         <TextView
             android:textSize="20dp"
             android:layout_width="wrap_content"
@@ -411,8 +414,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#F2FBEF"
-        android:orientation="vertical">
-
+        android:orientation="vertical"
+        android:visibility="invisible">
+        <TextView
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="상세보기"/>
+        <ImageView
+            android:id="@+id/show_draw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
     </LinearLayout>
     </FrameLayout>
 </LinearLayout>
